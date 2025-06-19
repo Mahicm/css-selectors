@@ -1,0 +1,125 @@
+
+:root {
+      --main-bg: lightgreen;
+    }
+button:hover {
+  background-color: var(--main-bg);
+}
+
+button:active {
+  background-color: lightblue;
+}
+
+button:focus {
+  outline: 2px solid red;
+  /* outline-offset: 4px; */
+}
+
+input:focus {
+  outline: 2px solid red;
+  /* outline-offset: 4px; */
+}
+ul li:first-child {
+  color: yellow;
+}
+
+ul li:last-child {
+  color: orange;
+}
+
+ul li:nth-child(4) {
+  color: green !important;
+}
+
+ul li:nth-last-child(2) {
+      font-style: italic;
+    } 
+
+ul li:nth-child(odd) {
+  color: blue;
+}
+ul li:nth-child(even) {
+  color: purple;
+}
+
+div:first-of-type {
+  color: red;
+}
+
+li:last-of-type {
+  color: orange;
+}
+
+a:link{
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+
+ div.only p:only-child {
+      color: rosybrown;
+    }
+
+ /* :empty */
+    div.empty-box:empty {
+      width: 100px;
+      height: 50px;
+      background-color: pink;
+    }
+
+    /* :not() */
+    p:not(#skip) {
+      font-size: 18px;
+    }
+
+    /* :checked */
+    input[type="checkbox"]:checked + label {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* :disabled and :enabled */
+    input:disabled {
+      background-color: #eee;
+    }
+
+    input:enabled {
+      background-color: #fff;
+    }
+
+    /* :valid and :invalid */
+    input:valid {
+    border: 2px solid green;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+    option:checked { /* :checked pseudo-class */
+      color: white;
+      background-color: lightblue;
+    }
+
+input:valid {
+  border: 2px solid green;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:disabled {
+  background-color: #eee;
+}
+input:checked {
+  outline: 2px dashed blue;
+} 
+/*Psudeo-elements*/
+
+input::placeholder {
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+}
+
+
+

@@ -1,0 +1,12 @@
+p::first-line {
+  color: red;
+}
+
+p::first-letter {
+  color: blue;
+  font-size: 2em;
+}
+p::selection {
+  background-color: yellow;
+  color:white;
+}

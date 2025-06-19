@@ -1,0 +1,106 @@
+/* ---------------- Basic Selectors ---------------- */
+
+h1 {
+  background-color: red;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.odd {
+  background-color: lightblue;
+}
+
+.even {
+  background-color: lightgreen;
+}
+
+p.second {
+  width: 100px;
+  padding: 10px;
+}
+
+.odd.first {
+  background-color: yellow;
+}
+
+#thirdId {
+  color: green;
+  font-size: 25px;
+}
+
+p.third {
+  font-style: italic;
+}
+
+/* Multiple selector */
+.fourth,
+#fifthId {
+  background-color: orange;
+  font-size: 15px;
+}
+
+/* ---------------- Attribute Selectors ---------------- */
+
+.container[class] {
+  background-color: lightgray;
+  padding: 20px;
+  border: 1px solid yellow;
+  border-radius: 20px;
+  width: 300px;
+}
+
+/* Exact match */
+li[class="a"] {
+  background-color: lightcoral;
+}
+
+/* Contains word (space-separated) */
+li[class~="a"] {
+  background-color: rgb(233, 154, 101);
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+input[type] {
+  background-color: lightgoldenrodyellow;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+input[required] {
+  border: 2px solid red;
+}
+
+/* Ends with 'odd' */
+p[class$="odd"] {
+  background-color: lightpink !important;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* Starts with 'f' */
+p[class^="f"] {
+  font-size: 26px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/* Contains 'd' anywhere */
+p[class*="d"] {
+  font-style: italic;
+  color: darkgreen;
+}
+
+/* Matches 'fruit' or values starting with 'fruit-' */
+div[data-cat|="fruit"] {
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-color: yellow;
+}
